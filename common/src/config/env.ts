@@ -12,4 +12,5 @@ function getEnvVariable(key: string, defaultValue?: string): string {
   return value;
 }
 
-export const jwtKey = getEnvVariable("JWT_KEY");
+export const JWT_KEY = getEnvVariable("JWT_KEY");
+export const NODE_ENV = getEnvVariable("NODE_ENV", "dev");
