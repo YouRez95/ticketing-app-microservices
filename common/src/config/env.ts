@@ -14,3 +14,4 @@ function getEnvVariable(key: string, defaultValue?: string): string {
 
 export const JWT_KEY = getEnvVariable("JWT_KEY");
 export const NODE_ENV = getEnvVariable("NODE_ENV", "dev");
+export const MONGO_URI = getEnvVariable("MONGO_URI");
