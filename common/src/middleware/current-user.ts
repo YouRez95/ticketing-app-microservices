@@ -1,10 +1,9 @@
 import { NextFunction, Request, Response } from "express";
 import jwt from "jsonwebtoken";
 import { JWT_KEY } from "../config/env";
-import { Types } from "mongoose";
 
 interface UserPayload {
-  id: Types.ObjectId;
+  userId: string;
   email: string;
 }
 
